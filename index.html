@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div ng-app="" ng-init="myCol='red';PrimerNombre='julianMorales'">
+
+		<p>The name is; <span data-ng-bind="PrimerNombre"></span></p>
+
+		<p>see the efect!!! with bootstrap</p>
+		<button type="button" class="btn btn-primary">boton primario</button>
+		<button type="button" class="btn btn-secondary">boton secundario</button>
+
+	    <p>Name1: <input type="text" ng-model="nombre"/></p>
+	    <p ng-bind="nombre"></p>
+
+
+	</br>
+		<h1>nombre2: {{nombre}}</h1>
+		<h4>Podemos sumar: {{3+2}}</h4>
+
+		<!--cambiar propiedades del css-->
+		<input style="background-color:{{myCol}}" ng-model="myCol">
+			
+</body>
+
+</html>
