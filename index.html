@@ -2,18 +2,24 @@
 <html>
 <head>	
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+	<div ng-app="" ng-init="carrito={trasera:15, delantera:13};
+	myCol='red';
+	PrimerNombre='julianMorales';
+	cantidad=1;
+	costo=5">
 
-	<div ng-app="" ng-init="myCol='red';PrimerNombre='julianMorales'">
+			First Name: <input type="text" ng-model="firstName"><br>
+			Last Name: <input type="text" ng-model="lastName"><br>
+			<br>
+			Full Name: {{firstName + " " + lastName}}
+			El Total en dollares: {{ cantidad +	costo + 10}}
+		<p>el carrito tiene balinera traseras: {{carrito.trasera}} y delanteras {{carrito.delantera}}</p>
 
 		<p>The name is; <span data-ng-bind="PrimerNombre"></span></p>
 
